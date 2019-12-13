@@ -7,6 +7,7 @@ console.log(example); */
 
 import  LoL  from './data/lol/lol.js';
 import {filtroXrol} from './data.js';
+//import {attack} from'./data.js';
 
 console.log('LoL', LoL);
 
@@ -61,6 +62,37 @@ btnassassin.addEventListener('click', () => {
     let datosAssasin=filtroXrol(valorClase)
     crearTarjeta(datosAssasin)
 });
+/*/checklistOne
+const chkOne= document.getElementById('checkss');
+console.log(chkOne)
+chkOne.addEventListener("click",()=> {
+    let valorAttack=document.getElementById("checkss").value
+    console.log(valorAttack) 
+});
+function crear (masatack){
+    for (let i=0;i <masatack.length; i++){
+        containerChampions.innerHTML += 
+
+        `<div class="card-champion">
+        <div><img class="avatar" src="${datos[i].img}">
+        </div>
+        <div class="name">
+        <h1>${datos[i].name}</h1></div>
+        <div class="tittle">
+        <h4>${datos[i].title}</h4></div>
+        <div><img class=power src="imagen/attack.jpg"
+        <p> Ataque ${atta[i]. info. attack}</p></div>
+        <div><img class=power src="imagen/defense.jpg"
+        <p> Defensa ${datos[i]. info. defense}</p></div>
+        <div><img class=power src="imagen/magic.jpg"
+        <p> Magia ${datos[i]. info. magic}</p></div>
+        <div><img class=power src="imagen/difficulty.jpg"
+        <p> Dificultad ${datos[i]. info. difficulty}</p></div>
+        </div> 
+        </div>`
+    }
+}    
+*/
 //BOTON LUCHADORES
 const btnfighters= document.getElementById('fighters');
 console.log(btnfighters)
@@ -112,6 +144,7 @@ btnsupport.addEventListener('click', () => {
     console.log(valorSupport)
     let datoSupport = filtroXrol(valorSupport)
     crearTarjeta(datoSupport)
+    
 });
 
 function crearTarjeta (datos){
@@ -133,31 +166,20 @@ function crearTarjeta (datos){
         <p> Magia ${datos[i]. info. magic}</p></div>
         <div><img class=power src="imagen/difficulty.jpg"
         <p> Dificultad ${datos[i]. info. difficulty}</p></div>
-        </div>
+        </div> 
         </div>`
-        
-       // containerChampions.innerHTML += dataLol[i].title;
+    
     }
 }
-
-/*/checklistOne
-const chkOne= document.getElementById('checkss');
-console.log(chkOne)
-chkOne.addEventListener("click",()=> {
-    let valorAttack=document.getElementById("checkss").value
-    console.log(valorAttack)
-    
-       // containerChampions.innerHTML += dataLol[i].title;
-    
-
-});
-//checklist SECOND
+/*/checklist SECOND
 const chkSec= document.getElementById('checkse');
 console.log(chkSec)
 chkSec.addEventListener("click",()=> {
     let valorMagia=document.getElementById("checkse").value
     console.log(valorMagia)
 })  
+
+
 //checklist THIRD
 const chkThird= document.getElementById('checkt');
 console.log(chkThird)

@@ -14,10 +14,9 @@ export function filtroXrol(dato){
   let resultadoFiltro= dataLol.filter(elemento => (elemento.tags.includes(dato)))  
   return resultadoFiltro
 }
-//Funcion filtrar x rol BOTON LUCHADORES
+//Funcion filtrar x ataque
 export function check (attack){
   let resultadoAttack=dataLol.filter(propiedad => (propiedad.info.includes(attack)))
-  console.log(resultadoAttack)
   return resultadoAttack
 
 }
