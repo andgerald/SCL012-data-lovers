@@ -1,38 +1,219 @@
-body{
-background-image: url(imagen/fondo.jpg);
-background-attachment: fixed;
-width: 80%;
-height: 500px;
-margin:50px auto;
+
+body {
+    background-image: url("imagen/fondo.jpg");
+    background-size: cover;
+    margin: center;
+    padding: center;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
 }
 
+  .intro{
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 500%;
+    margin-block-end: 4%;
+    width: 55%; 
+    padding: 3rem;
+  }  
+
+  .cabezote{
+    width: 1100px;
+    margin: auto;
+    height:339px;
+    padding-top: 30px;
+    align-content: center;
+  }
+
+  .logo{
+    display: flex;
+    justify-content:center;
+    
+  }
+
+  @media screen and (max-width:768px){
+  .logo{
+    display: flex;
+    justify-content:center;
+    width: 20%;
+  }
+  }
+  .menu-items{
+    display: flexbox;
+    padding:0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 88px;  
+    background-image: url(imagen/barra.png) 
+    }
+  .nav-item{
+    display: inline-block;
+  }
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+.bmenu-link,
+.bmenu-link:link, 
+.bmenu-link:visited, 
+.bmenu-link:active{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.textbarra{
+  background: transparent;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 47px;
+  font-family: Salsa;
+  font-size: 36px;
+  color: #D6B525;
+  text-shadow: 2px 0 0 #372B00, -2px 0 0 #372B00, 0 2px 0 #372B00, 0 -2px 0 #372B00, 1px 1px #372B00, -1px -1px 0 #372B00, 1px -1px 0 #372B00, -1px 1px 0 #372B00;
+  justify-content: center;
+  text-decoration: none;
+  top: 500px;
+  display: flex;
+}
+.text {
+  background: transparent;
+  border:none;
+  font-family: "salsa";
+  color: #D6B525;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.text:hover{
+  text-decoration: underline;
+}
+.bmenu > ul > li:hover{
+  background-image: url(imagen/select.png);
+  background-position: bottom;
+  background-repeat:no-repeat ;
+  display: flex-box;
+}
+.nav-item-dropdown{
+ cursor: pointer; 
+}
+ .submenu {
+  position: absolute;
+  background:rgb(0, 0, 0, 0.8);
+  left: 19%;
+  right: 18%;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  margin-block-end: 10%;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  display:table;
+  display:block;
+  display: flex;
+  pointer-events: auto;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.nav-item-dropdown:hover .submenu{
+  display:table;
+  display: flex;
+}
+#submenu-roles{
+  height: 8px;
+  font-family: Salsa;
+  font-size: 22px;
+  color: #D6B525;
+  text-decoration: none;
+  display: flex;
+  justify-content:space-around;
+  justify-content:space-between;
+  list-style-type: none;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.submenu-item {
+  cursor: pointer;
+  display: flex;
+  justify-content:space-evenly;
+}
+  .bmenu > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 88px;
+    background-image: url(imagen/barra.png)  
+  }
+  .btn ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contenedor{
+    background-color: rgb(0, 0, 0, 0.8);
+    margin-block-end: 4%;
+    width: 55%;
+    padding: 3rem;
+  }
+  .select{
+    display: flex;
+  }
+  .fotos{
+  padding: 10px;
+  margin: 4%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.textphoto{
+   font-family: "salsa";
+  color: #D6B525;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.footer{
+  background-color: black;
+  color: rgb(121, 100, 9);
+  font-size: 15px;
+  height: 80px;
+  padding-top: 1px;
+}
 .card-champion{
   border:solid #D6B525;
   background-color: rgb(0, 0, 0,0.8);
   height: 280px;
-  width: 180px;
+  width: 200px;
  border-radius: 15px;
  font-size: 15px;
  color: #D6B525;
  font-family: "salsa";
  flex-direction: row;
  text-align: center;
-margin-top: 30px;
+margin-top: 60px;
 }
 .container{
  background-color: rgb(0, 0, 0,0.7);
  background-attachment: fixed;
  display: flex;
+ width: 63%;
+ margin-top: 0;
  justify-content: space-around;
  flex-wrap: wrap;
-
-
 }
 .avatar{
  height: 70px;
 width: 70px;
 margin: 10px;
-
 }
 .name{
   bottom: -20px;
